@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<title>{% block title %}{%endblock} - a test website</title>
+<title>A test website</title>
 <section class="content">
     <header>
-        {% block header %}{% endblock %}
+        {% block header %}This is a header for the {{ page }}{% endblock %}
     </header>
-    {% block content %}{% endblock %}
+
+    {% block content %}{{ content }}{% endblock %}
 </section>
